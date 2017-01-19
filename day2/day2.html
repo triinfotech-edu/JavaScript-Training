@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script>
+		window.onload = () => {
+			const h1 = document.getElementById("welcome");
+			
+			h1.addEventListener('mouseover', () => {
+				h1.innerHTML = "Hi, Amit!";
+				h1.style.backgroundColor = "red";
+				h1.style.textAlign = "right";
+			});
+
+			h1.addEventListener('mouseout', () => {
+				h1.innerHTML = "Welcome";
+				h1.style.backgroundColor = "";
+				h1.style.textAlign = "left";
+			});
+
+		}
+
+		// function changeMe(event) {
+		// 	event.innerHTML = "Hi, Amit!";
+		// }
+	</script>
+</head>
+<body>
+	<h1 id="welcome">Welcome</h1>
+	<!-- <h1 id="welcome" onclick="this.innerHTML = 'Hi, Amit!'">Welcome</h1> -->
+</body>
+</html>
