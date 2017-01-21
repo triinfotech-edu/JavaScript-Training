@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script>
+		// Switch Case
+		// const a = 'Harpreet';
+		
+		// switch (a) {
+		// 	case 'Ajay':
+		// 		console.log("One");
+		// 		break;
+
+		// 	default:
+		// 		console.log("Other Number");	
+
+		// 	case 'Vaibhav':
+		// 		console.log("Two");
+		// 		break;
+
+		// 	case 'Harpreet':
+		// 		console.log("Three");
+		// 		break;			
+		// }
+		
+		// Loops
+		window.onload = () => {
+			let i = 6;
+			let app = document.getElementById("app");
+			// while (i < 7) {
+			// 	app.innerHTML += '<h' + i + '>Hello' + '</h' + i + '>';
+			// 	i++;
+			// }
+			// for (let i = 1; i < 7; i++)
+			// 	app.innerHTML += "<h" + i + ">Hello</h" + i + ">";	
+			do {
+				app.innerHTML += "<h" + i + ">Hello</h" + i + ">";	
+				i++;
+			} while(i < 7);
+		}
+	</script>
+</head>
+<body>
+	<div id="app"></div>
+</body>
+</html>
